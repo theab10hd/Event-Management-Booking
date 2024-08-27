@@ -2,19 +2,38 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", system-ui;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
 }
 
 :root {
-  --yellow: #ffc21a;
-  --light: #fdfdfd;
+  --yellow: #ffc21a; /* Main Color */
+  --light: #efefef;
   --blue: #36b9fd;
   --green: #33d767;
   --pink: #eb59c4;
 }
 
+body {
+  overflow-x: hidden;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+}
 /* Home Page Start*/
+
+body {
+  background-color: var(--light);
+}
 
 /* Home Page End */
 

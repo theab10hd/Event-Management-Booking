@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EventManage</title>
+    <title>Elite Events</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- Fontawsome -->
@@ -24,7 +24,273 @@
     <!-- Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="text-gray-800">
+    <!-- Body -->
+
+    <!-- Navbar Start-->
+    <header class="relative z-20">
+      <nav class="container px-28 flex h-16 items-center">
+        <div class="flex justify-between items-center w-screen">
+          <div class="flex items-center">
+            <!-- <i
+              class="fa-regular fa-calendar-check fa-xl p-0"
+              style="color: var(--light)"
+            ></i> -->
+            <h1
+              class="font-bold text-2xl ml-2 title"
+              style="color: var(--yellow)"
+            >
+              E<span class="font-medium text-white title">liteEventsIndia</span>
+            </h1>
+          </div>
+          <ul class="text-white">
+            <li class="inline-block mr-8">
+              <a href="" target="_blank" class="no-underline font-semibold"
+                >Home</a
+              >
+            </li>
+            <li class="inline-block mr-8">
+              <a href="" target="_blank" class="no-underline font-semibold"
+                >Book</a
+              >
+            </li>
+            <li class="inline-block mr-8">
+              <a href="" target="_blank" class="no-underline font-semibold"
+                >Contact</a
+              >
+            </li>
+            <li class="inline-block mr-8">
+              <a
+                href=""
+                target="_blank"
+                class="no-underline font-semibold rounded-md px-4 py-2 text-white"
+                style="background-color: var(--yellow)"
+                >Login</a
+              >
+            </li>
+            <li class="inline-block">
+              <a
+                href=""
+                target="_blank"
+                class="no-underline font-semibold rounded-md px-3 py-1.5 border-2"
+                style="border-color: var(--yellow); color: var(--yellow)"
+                >Register</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <div class="flex justify-center items-center w-screen -mt-16">
+      <video
+        class="w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        style="filter: grayscale(100%) brightness(70%)"
+      >
+        <source src="./images/hero-video.mp4" type="video/mp4" />
+
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!--  Divider -->
+    <div class="w-screen h-6" style="background-color: var(--yellow)"></div>
+
+    <!-- Main Section -->
+
+    <div class="container flex flex-col items-center justify-center mt-14">
+      <h1 class="text-5xl font-semibold text-center title">
+        Welcome to Elite Events
+      </h1>
+      <p class="w-2/4 text-center mt-8">
+        <span class="font-medium"
+          >Are you planning an event and need a seamless way to manage it? </span
+        >Look no further! At Elite Events, we offer a comprehensive suite of
+        tools and services to ensure your event is a resounding success. From
+        corporate meetings to personal celebrations, we’ve got you covered.
+      </p>
+      <div class="mt-8">
+        <a
+          href=""
+          target="_blank"
+          class="no-underline font-semibold rounded-md px-4 py-2 mx-2 text-white"
+          style="background-color: var(--yellow)"
+          >Book Now</a
+        >
+        <a
+          href=""
+          target="_blank"
+          class="no-underline font-semibold rounded-md px-3 py-1.5 border-2 mx-2"
+          style="border-color: var(--yellow); color: var(--yellow)"
+          >Get a Call</a
+        >
+      </div>
+    </div>
+
+    <!-- Top Events Section -->
+
+    <section class="mt-16 w-screen px-28">
+      <div class="grid gap-2 justify-center items-center">
+        <div class="grid grid-rows-1 gap-2">
+          <!-- Row 1: 2 columns -->
+          <div class="grid grid-cols-3 gap-2">
+            <div class="p-2">
+              <img
+                src="./images/events/dj.jpg"
+                alt="DJ Show"
+                class="object-cover rounded-lg"
+              />
+              <h1 class="text-xl font-bold mt-2">Grand Corporate Gala</h1>
+              <p class="mt-2 font-medium">
+                A sophisticated evening celebrating company milestones with
+                dinner, entertainment, and awards.
+              </p>
+              <a href="" class="no-underline text-sm text-gray-700"
+                >Learn more<i
+                  class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
+                ></i
+              ></a>
+            </div>
+            <!-- End -->
+            <div class="p-2">
+              <img
+                src="./images/events/running.jpg"
+                alt="DJ Show"
+                class="object-cover rounded-lg"
+              />
+              <h1 class="text-xl font-bold mt-2">Annual Charity Fundraiser</h1>
+              <p class="mt-2 font-medium">
+                A fundraiser with a silent auction and performances to support a
+                charitable cause.
+              </p>
+              <a href="" class="no-underline text-sm text-gray-700"
+                >Learn more<i
+                  class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
+                ></i
+              ></a>
+            </div>
+
+            <div class="p-2">
+              <img
+                src="./images/events/party.jpeg"
+                alt="DJ Show"
+                class="object-cover rounded-lg"
+              />
+              <h1 class="text-xl font-bold mt-2">Tech Innovation Conference</h1>
+              <p class="mt-2 font-medium">
+                A conference featuring tech showcases, keynote speeches, and
+                interactive workshops.
+              </p>
+              <a href="" class="no-underline text-sm text-gray-700"
+                >Learn more<i
+                  class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: 2 columns -->
+
+        <div class="grid grid-rows-1 gap-2">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="p-2">
+              <img
+                src="./images/events/dj2.jpg"
+                alt="DJ Show"
+                class="object-cover rounded-lg"
+              />
+              <h1 class="text-xl font-bold mt-2">Summer Music Festival</h1>
+              <p class="mt-2 font-medium">
+                An outdoor festival with live music, food trucks, and
+                family-friendly activities.
+              </p>
+              <a href="" class="no-underline text-sm text-gray-700"
+                >Learn more<i
+                  class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
+                ></i
+              ></a>
+            </div>
+            <div class="p-2">
+              <img
+                src="./images/events/newyear.jpeg"
+                alt="DJ Show"
+                class="object-cover rounded-lg"
+              />
+              <h1 class="text-xl font-bold mt-2">Wedding Extravaganza</h1>
+              <p class="mt-2 font-medium">
+                A tailored wedding event with vows, a reception, and
+                personalized decor for a memorable day.
+              </p>
+              <a href="" class="no-underline text-sm text-gray-700"
+                >Learn more<i
+                  class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <p class="text-center font-semibold mt-8">
+          See More Completed Projects
+          <i class="fa-solid fa-chevron-down ml-2"></i>
+        </p>
+      </div>
+    </section>
+
+    <!-- How We Work Section -->
+
+    <section class="mt-16 px-28">
+      <div class="grid grid-cols-4 mt-4">
+        <div class="space-y-4">
+          <div class="grid grid-cols-3 items-center justify-center p-1">
+            <div class="font-bold text-8xl col-span-1 title">1.</div>
+            <div class="col-span-2">
+              <h1 class="font-bold">Select Your Event Type</h1>
+              <p>Choose the type of event you're planning.</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="grid grid-cols-3 items-center justify-center p-1">
+            <div class="font-bold text-8xl col-span-1 title">2.</div>
+            <div class="col-span-2">
+              <h1 class="font-bold">Customize Your Experience</h1>
+              <p>Pick your services, vendors, and packages.</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="grid grid-cols-3 items-center justify-center p-1">
+            <div class="font-bold text-8xl col-span-1 title">3.</div>
+            <div class="col-span-2">
+              <h1 class="font-bold">Book & Confirm</h1>
+              <p>Finalize your choices and confirm your bookings.</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="grid grid-cols-3 items-center justify-center p-1">
+            <div class="font-bold text-8xl col-span-1 title">4.</div>
+            <div class="col-span-2">
+              <h1 class="font-bold">Enjoy Your Event</h1>
+              <p>Relax and enjoy knowing everything is taken care of!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+
+    <section class="px-28 mt-16">
+      <h1 class="text-3xl font-semibold text-center title">Our Services</h1>
+    </section>
+
     <!-- Script -->
     <script src="./script.js"></script>
   </body>
