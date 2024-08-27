@@ -28,14 +28,10 @@
     <!-- Body -->
 
     <!-- Navbar Start-->
-    <header class="relative z-20">
-      <nav class="container px-28 flex h-16 items-center">
-        <div class="flex justify-between items-center w-screen">
+    <header class="relative z-20 md:bg-transparent bg-black">
+      <nav class="container mx-auto px-6 lg:px-28 flex h-16 items-center">
+        <div class="flex justify-between items-center w-full">
           <div class="flex items-center">
-            <!-- <i
-              class="fa-regular fa-calendar-check fa-xl p-0"
-              style="color: var(--light)"
-            ></i> -->
             <h1
               class="font-bold text-2xl ml-2 title"
               style="color: var(--yellow)"
@@ -43,198 +39,231 @@
               E<span class="font-medium text-white title">liteEventsIndia</span>
             </h1>
           </div>
-          <ul class="text-white">
-            <li class="inline-block mr-8">
-              <a href="" target="_blank" class="no-underline font-semibold"
-                >Home</a
+          <div class="hidden md:flex space-x-8 text-white items-center">
+            <a href="#" class="no-underline font-semibold">Home</a>
+            <a href="#" class="no-underline font-semibold">Book</a>
+            <a href="#" class="no-underline font-semibold">Contact</a>
+            <a
+              href="#"
+              class="no-underline font-semibold rounded-md px-4 py-2 text-white"
+              style="background-color: var(--yellow)"
+              >Login</a
+            >
+            <a
+              href="#"
+              class="no-underline font-semibold rounded-md px-3 py-1.5 border-2"
+              style="border-color: var(--yellow); color: var(--yellow)"
+              >Register</a
+            >
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-            </li>
-            <li class="inline-block mr-8">
-              <a href="" target="_blank" class="no-underline font-semibold"
-                >Book</a
-              >
-            </li>
-            <li class="inline-block mr-8">
-              <a href="" target="_blank" class="no-underline font-semibold"
-                >Contact</a
-              >
-            </li>
-            <li class="inline-block mr-8">
-              <a
-                href=""
-                target="_blank"
-                class="no-underline font-semibold rounded-md px-4 py-2 text-white"
-                style="background-color: var(--yellow)"
-                >Login</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href=""
-                target="_blank"
-                class="no-underline font-semibold rounded-md px-3 py-1.5 border-2"
-                style="border-color: var(--yellow); color: var(--yellow)"
-                >Register</a
-              >
-            </li>
-          </ul>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-black text-white mx-auto"
+      >
+        <a href="#" class="block px-6 py-2">Home</a>
+        <a href="#" class="block px-6 py-2">Book</a>
+        <a href="#" class="block px-6 py-2">Contact</a>
+        <a href="#" class="block px-6 py-2 text-yellow-500">Login</a>
+        <a href="#" class="block px-6 py-2 text-yellow-500">Register</a>
+      </div>
     </header>
 
     <!-- Hero Section -->
 
-    <div class="flex justify-center items-center w-screen -mt-16">
-      <video
-        class="w-full h-full object-cover"
-        autoplay
-        muted
-        loop
-        style="filter: grayscale(100%) brightness(70%)"
-      >
-        <source src="./images/hero-video.mp4" type="video/mp4" />
-
-        Your browser does not support the video tag.
-      </video>
+    <div class="flex justify-center items-center h-screen w-full md:-mt-16">
+      <div class="relative w-full h-full md:h-screen md:w-screen">
+        <video
+          class="absolute inset-0 w-full h-full object-cover"
+          autoplay
+          muted
+          loop
+          style="filter: grayscale(100%) brightness(70%)"
+        >
+          <source src="./images/hero-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
 
     <!--  Divider -->
     <div class="w-screen h-6" style="background-color: var(--yellow)"></div>
 
     <!-- Main Section -->
-
-    <div class="container flex flex-col items-center justify-center mt-14">
-      <h1 class="text-5xl font-semibold text-center title">
-        Welcome to Elite Events
-      </h1>
-      <p class="w-2/4 text-center mt-8">
-        <span class="font-medium"
-          >Are you planning an event and need a seamless way to manage it? </span
-        >Look no further! At Elite Events, we offer a comprehensive suite of
-        tools and services to ensure your event is a resounding success. From
-        corporate meetings to personal celebrations, we’ve got you covered.
-      </p>
-      <div class="mt-8">
-        <a
-          href=""
-          target="_blank"
-          class="no-underline font-semibold rounded-md px-4 py-2 mx-2 text-white"
-          style="background-color: var(--yellow)"
-          >Book Now</a
-        >
-        <a
-          href=""
-          target="_blank"
-          class="no-underline font-semibold rounded-md px-3 py-1.5 border-2 mx-2"
-          style="border-color: var(--yellow); color: var(--yellow)"
-          >Get a Call</a
-        >
+    <section class="mt-14 md:px-0 flex justify-center px-8">
+      <div class="container flex flex-col items-center justify-center">
+        <h1 class="md:text-5xl text-4xl font-semibold text-center title">
+          Welcome to Elite Events
+        </h1>
+        <p class="md:w-2/4 text-center mt-8">
+          <span class="font-medium"
+            >Are you planning an event and need a seamless way to manage it? </span
+          >Look no further! At Elite Events, we offer a comprehensive suite of
+          tools and services to ensure your event is a resounding success. From
+          corporate meetings to personal celebrations, we’ve got you covered.
+        </p>
+        <div class="flex flex-col md:flex-row mt-8">
+          <a
+            href=""
+            target="_blank"
+            class="no-underline font-semibold rounded-md px-4 py-2 mx-1 text-white"
+            style="background-color: var(--yellow)"
+          >
+            Book Now
+          </a>
+          <a
+            href=""
+            target="_blank"
+            class="no-underline font-semibold rounded-md px-3 py-1.5 border-2 mx-1 mt-2 md:mt-0"
+            style="border-color: var(--yellow); color: var(--yellow)"
+          >
+            Get a Call
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- Top Events Section -->
 
-    <section class="mt-16 w-screen px-28">
-      <div class="grid gap-2 justify-center items-center">
-        <div class="grid grid-rows-1 gap-2">
-          <!-- Row 1: 2 columns -->
-          <div class="grid grid-cols-3 gap-2">
-            <div class="p-2">
-              <img
-                src="./images/events/dj.jpg"
-                alt="DJ Show"
-                class="object-cover rounded-lg"
-              />
-              <h1 class="text-xl font-bold mt-2">Grand Corporate Gala</h1>
-              <p class="mt-2 font-medium">
-                A sophisticated evening celebrating company milestones with
-                dinner, entertainment, and awards.
+    <section class="mt-16 w-screen px-8 md:px-28">
+      <div class="grid gap-4 md:gap-4">
+        <!-- Row 1: 2 columns on md+ screens, 1 column on sm- screens -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="p-2">
+            <img
+              src="./images/events/dj.jpg"
+              alt="DJ Show"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <h1 class="text-xl font-bold mt-2">Grand Corporate Gala</h1>
+            <p class="mt-2 font-medium">
+              A sophisticated evening celebrating company milestones with
+              dinner, entertainment, and awards.
+            </p>
+            <a href="#" class="no-underline text-sm text-gray-700">
+              Learn more
+              <i
+                class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
+              ></i>
+            </a>
+          </div>
+          <div class="p-2">
+            <img
+              src="./images/events/running.jpg"
+              alt="Annual Charity Fundraiser"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <h1 class="text-xl font-bold mt-2">Annual Charity Fundraiser</h1>
+            <p class="mt-2 font-medium">
+              A fundraiser with a silent auction and performances to support a
+              charitable cause.
+            </p>
+            <a href="#" class="no-underline text-sm text-gray-700">
+              Learn more
+              <i
+                class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
+              ></i>
+            </a>
+          </div>
+          <div class="p-2">
+            <img
+              src="./images/events/party.jpeg"
+              alt="Tech Innovation Conference"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <div class="flex items-center mt-2 flex-col lg:flex-row">
+              <h1 class="text-xl font-bold">Tech Innovation Conference</h1>
+              <p
+                class="bg-green-600 text-xs px-2 rounded-lg text-white font-semibold py-1 ml-5"
+              >
+                Upcoming
               </p>
-              <a href="" class="no-underline text-sm text-gray-700"
-                >Learn more<i
-                  class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
-                ></i
-              ></a>
             </div>
-            <!-- End -->
-            <div class="p-2">
-              <img
-                src="./images/events/running.jpg"
-                alt="DJ Show"
-                class="object-cover rounded-lg"
-              />
-              <h1 class="text-xl font-bold mt-2">Annual Charity Fundraiser</h1>
-              <p class="mt-2 font-medium">
-                A fundraiser with a silent auction and performances to support a
-                charitable cause.
-              </p>
-              <a href="" class="no-underline text-sm text-gray-700"
-                >Learn more<i
-                  class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
-                ></i
-              ></a>
-            </div>
-
-            <div class="p-2">
-              <img
-                src="./images/events/party.jpeg"
-                alt="DJ Show"
-                class="object-cover rounded-lg"
-              />
-              <h1 class="text-xl font-bold mt-2">Tech Innovation Conference</h1>
-              <p class="mt-2 font-medium">
-                A conference featuring tech showcases, keynote speeches, and
-                interactive workshops.
-              </p>
-              <a href="" class="no-underline text-sm text-gray-700"
-                >Learn more<i
-                  class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
-                ></i
-              ></a>
-            </div>
+            <p class="mt-2 font-medium">
+              A conference featuring tech showcases, keynote speeches, and
+              interactive workshops.
+            </p>
+            <a href="#" class="no-underline text-sm text-gray-700">
+              Learn more
+              <i
+                class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
+              ></i>
+            </a>
           </div>
         </div>
 
-        <!-- Row 2: 2 columns -->
-
-        <div class="grid grid-rows-1 gap-2">
-          <div class="grid grid-cols-2 gap-2">
-            <div class="p-2">
-              <img
-                src="./images/events/dj2.jpg"
-                alt="DJ Show"
-                class="object-cover rounded-lg"
-              />
-              <h1 class="text-xl font-bold mt-2">Summer Music Festival</h1>
-              <p class="mt-2 font-medium">
-                An outdoor festival with live music, food trucks, and
-                family-friendly activities.
+        <!-- Row 2: 2 columns on md+ screens, 1 column on sm- screens -->
+        <div class="md:grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
+          <div class="p-2">
+            <img
+              src="./images/events/dj2.jpg"
+              alt="Summer Music Festival"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <div class="flex items-center mt-2 flex-col lg:flex-row">
+              <h1 class="text-xl font-bold">Summer Music Festival</h1>
+              <p
+                class="bg-green-600 text-xs px-2 rounded-lg text-white font-semibold py-1 ml-5"
+              >
+                Upcoming
               </p>
-              <a href="" class="no-underline text-sm text-gray-700"
-                >Learn more<i
-                  class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
-                ></i
-              ></a>
             </div>
-            <div class="p-2">
-              <img
-                src="./images/events/newyear.jpeg"
-                alt="DJ Show"
-                class="object-cover rounded-lg"
-              />
-              <h1 class="text-xl font-bold mt-2">Wedding Extravaganza</h1>
-              <p class="mt-2 font-medium">
-                A tailored wedding event with vows, a reception, and
-                personalized decor for a memorable day.
-              </p>
-              <a href="" class="no-underline text-sm text-gray-700"
-                >Learn more<i
-                  class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
-                ></i
-              ></a>
-            </div>
+            <p class="mt-2 font-medium">
+              An outdoor festival with live music, food trucks, and
+              family-friendly activities.
+            </p>
+            <a href="#" class="no-underline text-sm text-gray-700">
+              Learn more
+              <i
+                class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
+              ></i>
+            </a>
+          </div>
+          <div class="p-2">
+            <img
+              src="./images/events/newyear.jpeg"
+              alt="Wedding Extravaganza"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <h1 class="text-xl font-bold mt-2">Wedding Extravaganza</h1>
+            <p class="mt-2 font-medium">
+              A tailored wedding event with vows, a reception, and personalized
+              decor for a memorable day.
+            </p>
+            <a href="#" class="no-underline text-sm text-gray-700">
+              Learn more
+              <i
+                class="fa-solid fa-up-right-from-square ml-2 text-gray-700"
+              ></i>
+            </a>
           </div>
         </div>
+
         <p class="text-center font-semibold mt-8">
           See More Completed Projects
           <i class="fa-solid fa-chevron-down ml-2"></i>
@@ -289,6 +318,140 @@
 
     <section class="px-28 mt-16">
       <h1 class="text-3xl font-semibold text-center title">Our Services</h1>
+      <div class="flex justify-center mt-4">
+        <p class="w-8/12 text-center">
+          we bring your events to life with comprehensive planning and seamless
+          execution. Our services include event planning and coordination, venue
+          sourcing, catering, entertainment booking, marketing, on-site
+          management, and post-event analysis. Whether it's a corporate
+          conference, wedding, or social gathering, we ensure every detail is
+          perfect, leaving you to enjoy a memorable experience.
+        </p>
+      </div>
+      <div class="container mx-auto p-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Service Card 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              class="w-full h-32 sm:h-48 object-cover"
+              src="https://via.placeholder.com/150"
+              alt="Service 1"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Service 1</h2>
+              <p class="mt-2 text-gray-600">
+                Brief description of the service offered.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              class="w-full h-32 sm:h-48 object-cover"
+              src="https://via.placeholder.com/150"
+              alt="Service 2"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Service 2</h2>
+              <p class="mt-2 text-gray-600">
+                Brief description of the service offered.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              class="w-full h-32 sm:h-48 object-cover"
+              src="https://via.placeholder.com/150"
+              alt="Service 3"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Service 3</h2>
+              <p class="mt-2 text-gray-600">
+                Brief description of the service offered.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              class="w-full h-32 sm:h-48 object-cover"
+              src="https://via.placeholder.com/150"
+              alt="Service 4"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Service 4</h2>
+              <p class="mt-2 text-gray-600">
+                Brief description of the service offered.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+          <!-- Service Card 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              class="w-full h-32 sm:h-48 object-cover"
+              src="https://via.placeholder.com/150"
+              alt="Service 1"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Service 1</h2>
+              <p class="mt-2 text-gray-600">
+                Brief description of the service offered.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              class="w-full h-32 sm:h-48 object-cover"
+              src="https://via.placeholder.com/150"
+              alt="Service 2"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Service 2</h2>
+              <p class="mt-2 text-gray-600">
+                Brief description of the service offered.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              class="w-full h-32 sm:h-48 object-cover"
+              src="https://via.placeholder.com/150"
+              alt="Service 3"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Service 3</h2>
+              <p class="mt-2 text-gray-600">
+                Brief description of the service offered.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              class="w-full h-32 sm:h-48 object-cover"
+              src="https://via.placeholder.com/150"
+              alt="Service 4"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Service 4</h2>
+              <p class="mt-2 text-gray-600">
+                Brief description of the service offered.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Script -->
