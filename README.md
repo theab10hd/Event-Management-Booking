@@ -2,7 +2,14 @@
 
 Description - a static website built for managing event bookings, featuring a modern and responsive design using HTML, CSS, and Tailwind CSS. The website includes essential pages such as a homepage, events listing, booking form, and contact information.
 
-by Group - 9 - Abhijith Gaganan - Abhirami KT - Niranjan - Adithya Krishna - Sidharth
+by Group - 9 
+
+Abhijith Gaganan 
+Abhirami KT
+Niranjan
+Adithya Krishna
+Sidharth
+Aswan Krishna
 
 # Features
 
