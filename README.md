@@ -5,10 +5,15 @@ Description - a static website built for managing event bookings, featuring a mo
 by Group - 9 
 
 Abhijith Gaganan 
+
 Abhirami KT
+
 Niranjan
+
 Adithya Krishna
+
 Sidharth
+
 Aswan Krishna
 
 # Features
