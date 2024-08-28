@@ -96,14 +96,16 @@
 
     <!-- Hero Section -->
 
-    <div class="flex justify-center items-center h-screen w-full md:-mt-16">
+    <div
+      class="md:flex justify-center items-center h-screen w-full md:-mt-16 hidden"
+    >
       <div class="relative w-full h-full md:h-screen md:w-screen">
         <video
           class="absolute inset-0 w-full h-full object-cover"
           autoplay
-          muted
           loop
-          style="filter: grayscale(100%) brightness(70%)"
+          muted
+          style="filter: grayscale(50%) brightness(70%)"
         >
           <source src="./images/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -112,7 +114,10 @@
     </div>
 
     <!--  Divider -->
-    <div class="w-screen h-6" style="background-color: var(--yellow)"></div>
+    <div
+      class="w-screen h-6 hidden md:block"
+      style="background-color: var(--yellow)"
+    ></div>
 
     <!-- Main Section -->
     <section class="mt-14 md:px-0 flex justify-center px-8">
@@ -273,39 +278,47 @@
 
     <!-- How We Work Section -->
 
-    <section class="mt-16 px-28">
-      <div class="grid grid-cols-4 mt-4">
+    <section class="mt-16 md:px-28 px-8">
+      <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-2 grid-cols-1 mt-4">
         <div class="space-y-4">
-          <div class="grid grid-cols-3 items-center justify-center p-1">
-            <div class="font-bold text-8xl col-span-1 title">1.</div>
-            <div class="col-span-2">
+          <div
+            class="grid md:grid-cols-3 grid-cols-5 items-center justify-center p-1 gap-1"
+          >
+            <div class="font-bold text-8xl md:col-span-1 title">1.</div>
+            <div class="md:col-span-2 col-span-4">
               <h1 class="font-bold">Select Your Event Type</h1>
               <p>Choose the type of event you're planning.</p>
             </div>
           </div>
         </div>
         <div class="space-y-4">
-          <div class="grid grid-cols-3 items-center justify-center p-1">
+          <div
+            class="grid md:grid-cols-3 grid-cols-5 items-center justify-center p-1 gap-1"
+          >
             <div class="font-bold text-8xl col-span-1 title">2.</div>
-            <div class="col-span-2">
+            <div class="md:col-span-2 col-span-4">
               <h1 class="font-bold">Customize Your Experience</h1>
               <p>Pick your services, vendors, and packages.</p>
             </div>
           </div>
         </div>
         <div class="space-y-4">
-          <div class="grid grid-cols-3 items-center justify-center p-1">
+          <div
+            class="grid md:grid-cols-3 grid-cols-5 items-center justify-center p-1 gap-1"
+          >
             <div class="font-bold text-8xl col-span-1 title">3.</div>
-            <div class="col-span-2">
+            <div class="md:col-span-2 col-span-4">
               <h1 class="font-bold">Book & Confirm</h1>
               <p>Finalize your choices and confirm your bookings.</p>
             </div>
           </div>
         </div>
         <div class="space-y-4">
-          <div class="grid grid-cols-3 items-center justify-center p-1">
+          <div
+            class="grid md:grid-cols-3 grid-cols-5 items-center justify-center p-1 gap-1"
+          >
             <div class="font-bold text-8xl col-span-1 title">4.</div>
-            <div class="col-span-2">
+            <div class="md:col-span-2 col-span-4">
               <h1 class="font-bold">Enjoy Your Event</h1>
               <p>Relax and enjoy knowing everything is taken care of!</p>
             </div>
