@@ -1,3 +1,5 @@
+// Navbar
+
 function navbarTap() {
   var menu = document.getElementById("mobile-menu");
 
@@ -19,6 +21,8 @@ function navbarTap() {
     );
   }
 }
+
+// Accordion 
 
 function toggleAccordion(id) {
   const content = document.getElementById(id);

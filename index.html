@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elite Events</title>
+    <title>Home | EliteEvents</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./images/icon.svg" type="image/x-icon" />
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
     <!-- Google Font -->
@@ -24,7 +26,7 @@
     <!-- Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="text-gray-800" id="home">
+  <body class="text-gray-800">
     <!-- Body -->
 
     <!-- Navbar Start-->
@@ -36,27 +38,24 @@
           class="container py-4 flex mx-auto px-6 lg:px-28 justify-between items-center w-screen"
         >
           <div class="flex items-center">
-            <h1
-              class="font-bold text-2xl ml-2 title"
-              style="color: var(--yellow)"
-            >
-              E<span class="font-medium text-white title">liteEventsIndia</span>
+            <h1 class="font-bold text-2xl ml-2 title text-yellow-500">
+              E<span class="font-medium text-white title"
+                >liteEventsGlobal</span
+              >
             </h1>
           </div>
           <div class="hidden md:flex space-x-8 text-white items-center">
-            <a href="#home" class="no-underline font-semibold">Home</a>
+            <a href="./index.html" class="no-underline font-semibold">Home</a>
             <a href="#" class="no-underline font-semibold">Book</a>
             <a href="#" class="no-underline font-semibold">Contact</a>
             <a
               href="#"
-              class="no-underline font-semibold rounded-md px-4 py-2 text-white"
-              style="background-color: var(--yellow)"
+              class="no-underline font-semibold rounded-md px-4 py-2 text-white bg-yellow-500 hover:bg-yellow-300 duration-300"
               >Login</a
             >
             <a
               href="#"
-              class="no-underline font-semibold rounded-md px-3 py-1.5 border-2"
-              style="border-color: var(--yellow); color: var(--yellow)"
+              class="no-underline font-semibold rounded-md px-3 py-1.5 border-2 border-yellow-500 hover:border-yellow-300 hover:text-yellow-300 duration-300"
               >Register</a
             >
           </div>
@@ -91,11 +90,19 @@
         id="mobile-menu"
         class="w-full hidden md:hidden z-0 absolute top-16 bg-gray-800 text-white mx-auto h-screen transform -translate-y transition-transform duration-500 ease-in-out"
       >
-        <a href="#home" class="block px-6 py-2">Home</a>
+        <a href="./index.html" class="block px-6 py-2">Home</a>
         <a href="#" class="block px-6 py-2">Book</a>
         <a href="#" class="block px-6 py-2">Contact</a>
-        <a href="#" class="block px-6 py-2 text-yellow-500">Login</a>
-        <a href="#" class="block px-6 py-2 text-yellow-500">Register</a>
+        <a
+          href="#"
+          class="block px-6 py-2 text-yellow-500 hover:text-yellow-300 duration-300"
+          >Login</a
+        >
+        <a
+          href="#"
+          class="block px-6 py-2 text-yellow-500 hover:text-yellow-300 duration-300"
+          >Register</a
+        >
         <button class="flex w-full justify-center mt-8" onclick="navbarTap()">
           <i
             class="fa-regular fa-circle-xmark block px-6 py-2 fa-2xl"
@@ -107,28 +114,21 @@
 
     <!-- Hero Section -->
 
-    <div
-      class="md:flex justify-center items-center w-full h-screen md:-mt-16 hidden"
-    >
-      <div class="relative w-screen h-screen">
-        <video
-          class="absolute inset-0 w-full h-full object-cover"
-          autoplay
-          loop
-          muted
-          style="filter: grayscale(50%) brightness(70%)"
-        >
-          <source src="./images/hero-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+    <div class="md:flex justify-center items-center w-screen md:-mt-16 hidden">
+      <video
+        class="w-full object-cover"
+        autoplay
+        loop
+        muted
+        style="filter: grayscale(100%) brightness(50%)"
+      >
+        <source src="./images/hero-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <!--  Divider -->
-    <div
-      class="w-screen h-6 hidden md:block"
-      style="background-color: var(--yellow)"
-    ></div>
+    <div class="w-screen h-6 hidden md:block bg-yellow-500"></div>
 
     <!-- Main Section -->
     <section class="mt-14 flex justify-center md:px-28 sm:px-8 px-4">
@@ -136,7 +136,7 @@
         <h1 class="md:text-5xl text-4xl font-semibold text-center title">
           Welcome to Elite Events
         </h1>
-        <p class="md:w-2/4 text-center mt-8">
+        <p class="w-full text-center mt-8">
           <span class="font-medium"
             >Are you planning an event and need a seamless way to manage it? </span
           >Look no further! At Elite Events, we offer a comprehensive suite of
@@ -147,16 +147,14 @@
           <a
             href=""
             target="_blank"
-            class="no-underline font-semibold rounded-md px-4 py-2 mx-1 text-white"
-            style="background-color: var(--yellow)"
+            class="no-underline font-semibold rounded-md px-4 py-2 mx-1 text-white bg-yellow-500 hover:bg-yellow-300 duration-300"
           >
             Book Now
           </a>
           <a
             href=""
             target="_blank"
-            class="no-underline font-semibold rounded-md px-3 py-1.5 border-2 mx-1 mt-2 md:mt-0"
-            style="border-color: var(--yellow); color: var(--yellow)"
+            class="no-underline font-semibold rounded-md px-3 py-1.5 border-2 mx-1 mt-2 md:mt-0 text-yellow-500 border-yellow-500 hover:border-yellow-700 hover:text-yellow-700 duration-300"
           >
             Get a Call
           </a>
@@ -170,7 +168,7 @@
       <div class="grid gap-4 md:gap-4">
         <!-- Row 1: 2 columns on md+ screens, 1 column on sm- screens -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div class="p-2">
+          <div class="p-2 md:hover:scale-105 duration-300">
             <img
               src="./images/events/dj.jpg"
               alt="DJ Show"
@@ -188,7 +186,7 @@
               ></i>
             </a>
           </div>
-          <div class="p-2">
+          <div class="p-2 md:hover:scale-105 duration-300">
             <img
               src="./images/events/running.jpg"
               alt="Annual Charity Fundraiser"
@@ -206,7 +204,7 @@
               ></i>
             </a>
           </div>
-          <div class="p-2">
+          <div class="p-2 md:hover:scale-105 duration-300">
             <img
               src="./images/events/party.jpeg"
               alt="Tech Innovation Conference"
@@ -235,7 +233,7 @@
 
         <!-- Row 2: 2 columns on md+ screens, 1 column on sm- screens -->
         <div class="md:grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
-          <div class="p-2">
+          <div class="p-2 md:hover:scale-105 duration-300">
             <img
               src="./images/events/dj2.jpg"
               alt="Summer Music Festival"
@@ -260,7 +258,7 @@
               ></i>
             </a>
           </div>
-          <div class="p-2">
+          <div class="p-2 md:hover:scale-105 duration-300">
             <img
               src="./images/events/newyear.jpeg"
               alt="Wedding Extravaganza"
@@ -280,7 +278,7 @@
           </div>
         </div>
 
-        <p class="text-center font-semibold mt-8">
+        <p class="text-center font-semibold mt-8 md:hidden">
           See More Completed Projects
           <i class="fa-solid fa-chevron-down ml-2"></i>
         </p>
@@ -363,15 +361,15 @@
           >
         </p>
       </div>
-      <div class="container mx-auto mt-4">
+      <div class="w-screen mx-auto mt-4">
         <!-- Horizontal scroll wrapper -->
-        <div class="overflow-x-auto no-scrollbar py-6">
+        <div class="overflow-x-auto no-scrollbar py-6 px-3">
           <div
             class="grid grid-flow-col md:auto-cols-[minmax(200px,_1fr)] auto-cols-[minmax(150px,_1fr)] gap-2"
           >
             <!-- Service Card  -->
             <div
-              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between md:hover:scale-105 duration-100"
             >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
@@ -390,8 +388,7 @@
                 </div>
                 <hr class="mt-2" />
                 <button
-                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
-                  style="background-color: var(--yellow)"
+                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2 bg-yellow-500 hover:bg-yellow-300 duration-300"
                 >
                   Book
                 </button>
@@ -400,7 +397,7 @@
 
             <!-- Service Card  -->
             <div
-              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between md:hover:scale-105 duration-100"
             >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
@@ -419,8 +416,7 @@
                 </div>
                 <hr class="mt-2" />
                 <button
-                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
-                  style="background-color: var(--yellow)"
+                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2 bg-yellow-500 hover:bg-yellow-300 duration-300"
                 >
                   Book
                 </button>
@@ -429,7 +425,7 @@
 
             <!-- Service Card  -->
             <div
-              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between md:hover:scale-105 duration-100"
             >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
@@ -448,8 +444,7 @@
                 </div>
                 <hr class="mt-2" />
                 <button
-                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
-                  style="background-color: var(--yellow)"
+                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2 bg-yellow-500 hover:bg-yellow-300 duration-300"
                 >
                   Book
                 </button>
@@ -458,7 +453,7 @@
 
             <!-- Service Card  -->
             <div
-              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between md:hover:scale-105 duration-100"
             >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
@@ -477,8 +472,7 @@
                 </div>
                 <hr class="mt-2" />
                 <button
-                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
-                  style="background-color: var(--yellow)"
+                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2 bg-yellow-500 hover:bg-yellow-300 duration-300"
                 >
                   Book
                 </button>
@@ -487,7 +481,7 @@
 
             <!-- Service Card  -->
             <div
-              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between md:hover:scale-105 duration-100"
             >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
@@ -507,8 +501,7 @@
 
                 <hr class="mt-2" />
                 <button
-                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
-                  style="background-color: var(--yellow)"
+                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2 bg-yellow-500 hover:bg-yellow-300 duration-300"
                 >
                   Book
                 </button>
@@ -517,7 +510,7 @@
 
             <!-- Service Card  -->
             <div
-              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between md:hover:scale-105 duration-100"
             >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
@@ -537,8 +530,7 @@
 
                 <hr class="mt-2" />
                 <button
-                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
-                  style="background-color: var(--yellow)"
+                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2 bg-yellow-500 hover:bg-yellow-300 duration-300"
                 >
                   Book
                 </button>
@@ -547,7 +539,7 @@
 
             <!-- Service Card  -->
             <div
-              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between md:hover:scale-105 duration-100"
             >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
@@ -567,8 +559,7 @@
 
                 <hr class="mt-2" />
                 <button
-                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
-                  style="background-color: var(--yellow)"
+                  class="px-3 py-1 rounded-md text-white mt-2 w-1/2 bg-yellow-500 hover:bg-yellow-300 duration-300"
                 >
                   Book
                 </button>

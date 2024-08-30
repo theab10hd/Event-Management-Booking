@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="logosandtypes_com" data-name="logosandtypes com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffd500;
+      }
+
+      .cls-2 {
+        fill: #1c1733;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path class="cls-3" d="M0,0H150V150H0V0Z"/>
+  <rect class="cls-1" x="10.48" y="13.84" width="128.44" height="123.98"/>
+  <polygon class="cls-2" points="68.11 69.39 54.47 69.39 54.47 96.66 40.83 96.66 40.83 110.3 109.03 110.3 109.03 96.66 68.11 96.66 68.11 83.02 109.03 83.02 109.03 69.39 81.75 69.39 81.75 55.74 109.03 55.74 109.03 42.1 68.11 42.1 68.11 69.39"/>
+</svg>

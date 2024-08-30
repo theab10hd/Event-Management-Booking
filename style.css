@@ -6,14 +6,6 @@
   font-style: normal;
 }
 
-:root {
-  --yellow: #ffc21a; /* Main Color */
-  --light: #efefef;
-  --blue: #36b9fd;
-  --green: #33d767;
-  --pink: #eb59c4;
-}
-
 body {
   overflow-x: hidden;
 }
@@ -25,12 +17,12 @@ body::-webkit-scrollbar,
 
 .title {
   font-family: "DM Serif Text", serif;
-  font-weight: 400;
+  font-weight: 300 !important;
 }
 /* Home Page Start*/
 
 body {
-  background-color: var(--light);
+  background-color: #efefef;
 }
 
 /* Home Page End */
