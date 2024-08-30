@@ -16,8 +16,6 @@
 
 body {
   overflow-x: hidden;
-  background-image: url(images/bg.jpg);
-  background-size: cover;
 }
 
 body::-webkit-scrollbar,

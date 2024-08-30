@@ -24,13 +24,17 @@
     <!-- Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="text-gray-800">
+  <body class="text-gray-800" id="home">
     <!-- Body -->
 
     <!-- Navbar Start-->
-    <header class="relative z-20 md:bg-transparent bg-black">
-      <nav class="container mx-auto px-6 lg:px-28 flex h-16 items-center">
-        <div class="flex justify-between items-center w-full">
+    <header class="relative flex justify-center">
+      <nav
+        class="flex h-16 w-screen justify-center items-center relative z-10 bg-gray-800 md:bg-transparent"
+      >
+        <div
+          class="container py-4 flex mx-auto px-6 lg:px-28 justify-between items-center w-screen"
+        >
           <div class="flex items-center">
             <h1
               class="font-bold text-2xl ml-2 title"
@@ -40,7 +44,7 @@
             </h1>
           </div>
           <div class="hidden md:flex space-x-8 text-white items-center">
-            <a href="#" class="no-underline font-semibold">Home</a>
+            <a href="#home" class="no-underline font-semibold">Home</a>
             <a href="#" class="no-underline font-semibold">Book</a>
             <a href="#" class="no-underline font-semibold">Contact</a>
             <a
@@ -61,6 +65,7 @@
             <button
               id="mobile-menu-button"
               class="text-white focus:outline-none"
+              onclick="navbarTap()"
             >
               <svg
                 class="h-6 w-6"
@@ -84,13 +89,19 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden bg-black text-white mx-auto"
+        class="w-full hidden md:hidden z-0 absolute top-16 bg-gray-800 text-white mx-auto h-screen transform -translate-y transition-transform duration-500 ease-in-out"
       >
-        <a href="#" class="block px-6 py-2">Home</a>
+        <a href="#home" class="block px-6 py-2">Home</a>
         <a href="#" class="block px-6 py-2">Book</a>
         <a href="#" class="block px-6 py-2">Contact</a>
         <a href="#" class="block px-6 py-2 text-yellow-500">Login</a>
         <a href="#" class="block px-6 py-2 text-yellow-500">Register</a>
+        <button class="flex w-full justify-center mt-8" onclick="navbarTap()">
+          <i
+            class="fa-regular fa-circle-xmark block px-6 py-2 fa-2xl"
+            style="color: #ffffff"
+          ></i>
+        </button>
       </div>
     </header>
 
@@ -359,14 +370,16 @@
             class="grid grid-flow-col md:auto-cols-[minmax(200px,_1fr)] auto-cols-[minmax(150px,_1fr)] gap-2"
           >
             <!-- Service Card  -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+            >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
                 src="https://images.pexels.com/photos/50675/banquet-wedding-society-deco-50675.jpeg?cs=srgb&dl=pexels-pixabay-50675.jpg&fm=jpg"
                 alt="Service 1"
               />
               <div
-                class="p-2 text-center flex flex-col justify-between items-center"
+                class="text-center flex flex-col justify-between items-center flex-grow p-2"
               >
                 <div>
                   <h2 class="text-lg font-semibold">Event Planning</h2>
@@ -374,8 +387,8 @@
                     Comprehensive organization of event logistics, including
                     scheduling, budgeting, and venue selection.
                   </p>
-                  <hr class="mt-2" />
                 </div>
+                <hr class="mt-2" />
                 <button
                   class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
                   style="background-color: var(--yellow)"
@@ -386,14 +399,16 @@
             </div>
 
             <!-- Service Card  -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+            >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
                 src="https://4.imimg.com/data4/PI/EW/MY-1703213/corporate-promotional-event-service.jpg"
                 alt="Service 2"
               />
               <div
-                class="p-2 text-center flex flex-col justify-between items-center"
+                class="p-2 text-center flex flex-col justify-between items-center flex-grow"
               >
                 <div>
                   <h2 class="text-lg font-semibold">Venue Management</h2>
@@ -401,8 +416,8 @@
                     Coordination and management of all venue-related aspects,
                     from booking to layout design.
                   </p>
-                  <hr class="mt-2" />
                 </div>
+                <hr class="mt-2" />
                 <button
                   class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
                   style="background-color: var(--yellow)"
@@ -413,14 +428,16 @@
             </div>
 
             <!-- Service Card  -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+            >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
                 src="https://c1.wallpaperflare.com/preview/43/130/490/buffet-dining-dinner-lunch.jpg"
                 alt="Service 2"
               />
               <div
-                class="p-2 text-center flex flex-col justify-between items-center"
+                class="p-2 text-center flex flex-col justify-between items-center flex-grow"
               >
                 <div>
                   <h2 class="text-lg font-semibold">Catering Services</h2>
@@ -428,8 +445,8 @@
                     Provision of food and beverages tailored to the event's
                     theme and guest preferences.
                   </p>
-                  <hr class="mt-2" />
                 </div>
+                <hr class="mt-2" />
                 <button
                   class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
                   style="background-color: var(--yellow)"
@@ -440,14 +457,16 @@
             </div>
 
             <!-- Service Card  -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+            >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
                 src="https://cdn.pixabay.com/photo/2019/08/08/10/45/amusement-park-4392606_1280.jpg"
                 alt="Service 2"
               />
               <div
-                class="p-2 text-center flex flex-col justify-between items-center"
+                class="p-2 text-center flex flex-col justify-between items-center flex-grow"
               >
                 <div>
                   <h2 class="text-lg font-semibold">Entertainment Booking</h2>
@@ -455,8 +474,8 @@
                     Arranging performers, speakers, or entertainment acts to
                     enhance the event experience.
                   </p>
-                  <hr class="mt-2" />
                 </div>
+                <hr class="mt-2" />
                 <button
                   class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
                   style="background-color: var(--yellow)"
@@ -467,14 +486,16 @@
             </div>
 
             <!-- Service Card  -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+            >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
                 src="https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg"
                 alt="Service 2"
               />
               <div
-                class="p-2 text-center flex flex-col justify-between items-center"
+                class="p-2 text-center flex flex-col justify-between items-center flex-grow"
               >
                 <div>
                   <h2 class="text-lg font-semibold">Audio-Visual Production</h2>
@@ -482,9 +503,9 @@
                     Setup and management of sound, lighting, and visual elements
                     to create an engaging atmosphere.
                   </p>
-                  <hr class="mt-2" />
                 </div>
 
+                <hr class="mt-2" />
                 <button
                   class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
                   style="background-color: var(--yellow)"
@@ -495,14 +516,16 @@
             </div>
 
             <!-- Service Card  -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+            >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
                 src="https://media.istockphoto.com/id/1464312029/photo/digital-online-marketing-commerce-sale-concept-promotion-of-products-or-services-through.jpg?s=612x612&w=0&k=20&c=8steJIQoLUfmZQw-URHyNKZYjRsasgbP9RHL29rwqI8="
                 alt="Service 2"
               />
               <div
-                class="p-2 text-center flex flex-col justify-between items-center"
+                class="p-2 text-center flex flex-col justify-between items-center flex-grow"
               >
                 <div>
                   <h2 class="text-lg font-semibold">Marketing and Promotion</h2>
@@ -510,9 +533,9 @@
                     Developing and executing marketing strategies to promote the
                     event and drive attendance.
                   </p>
-                  <hr class="mt-2" />
                 </div>
 
+                <hr class="mt-2" />
                 <button
                   class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
                   style="background-color: var(--yellow)"
@@ -523,14 +546,16 @@
             </div>
 
             <!-- Service Card  -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div
+              class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col justify-between"
+            >
               <img
                 class="w-full h-32 sm:h-48 object-cover"
                 src="https://media.istockphoto.com/id/1140691225/photo/network-of-business-concept.jpg?s=612x612&w=0&k=20&c=B83OQZB9fDrwciLmwNBtvZLEU0h06lWFv4mfFF1ZAzU="
                 alt="Service 2"
               />
               <div
-                class="p-2 text-center flex flex-col justify-between items-center"
+                class="p-2 text-center flex flex-col justify-between items-center flex-grow"
               >
                 <div>
                   <h2 class="text-lg font-semibold">On-Site Coordination</h2>
@@ -538,9 +563,9 @@
                     Real-time management and troubleshooting during the event to
                     ensure smooth execution.
                   </p>
-                  <hr class="mt-2" />
                 </div>
 
+                <hr class="mt-2" />
                 <button
                   class="px-3 py-1 rounded-md text-white mt-2 w-1/2"
                   style="background-color: var(--yellow)"
@@ -601,31 +626,231 @@
           class="grid grid-cols-2 lg:grid-cols-4 mt-4 justify-center items-start"
         >
           <!-- Achivement  -->
-          <div class="flex flex-col items-center justify-center">
-            <h1 class="font-semibold md:text-8xl text-6xl title text-center">100+</h1>
-            <p class="md:text-xl text-lg -mt-1 font-medium text-center">
-              Happy Customers Served
-            </p>
+          <div class="flex flex-col items-center justify-center p-2">
+            <h1
+              class="font-semibold md:text-8xl text-6xl title text-center tracking-wider"
+            >
+              100+
+            </h1>
+            <p class="md:text-lg text-sm font-small">Happy Customers Served</p>
           </div>
           <!-- Achivement  -->
-          <div class="flex flex-col items-center justify-center">
-            <h1 class="font-semibold md:text-8xl text-6xl title text-center">200+</h1>
-            <p class="md:text-xl text-lg -mt-1 font-medium text-center">
-              Projects Completed
-            </p>
+          <div class="flex flex-col items-center justify-center p-2">
+            <h1
+              class="font-semibold md:text-8xl text-6xl title text-center tracking-wider"
+            >
+              200+
+            </h1>
+            <p class="md:text-lg text-sm font-small">Projects Completed</p>
           </div>
           <!-- Achivement  -->
-          <div class="flex flex-col items-center justify-center">
-            <h1 class="font-semibold md:text-8xl text-6xl title text-center">150+</h1>
-            <p class="md:text-xl text-lg -mt-1 font-medium text-center">
-              5 Star Rating
-            </p>
+          <div class="flex flex-col items-center justify-center p-2">
+            <h1
+              class="font-semibold md:text-8xl text-6xl title text-center tracking-wider"
+            >
+              150+
+            </h1>
+            <p class="md:text-lg text-sm font-small">5 Star Rating</p>
           </div>
           <!-- Achivement  -->
-          <div class="flex flex-col items-center justify-center">
-            <h1 class="font-semibold md:text-8xl text-6xl title text-center">200+</h1>
-            <p class="md:text-xl text-lg -mt-1 font-medium text-center">
-              Positive Testimonials
+          <div class="flex flex-col items-center justify-center p-2">
+            <h1
+              class="font-semibold md:text-8xl text-6xl title text-center tracking-wider"
+            >
+              200+
+            </h1>
+            <p class="md:text-lg text-sm font-small">Positive Testimonials</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordan -->
+
+    <section class="mt-16 md:px-28 sm:px-8 px-4">
+      <h1 class="text-3xl font-semibold text-center title">
+        Frequently Asked Questions and Answers
+      </h1>
+      <div class="mt-8">
+        <!-- Accordion Item 1 -->
+        <div class="border-2 rounded-xl px-8 mt-2 bg-white">
+          <button
+            class="w-full flex justify-between items-center py-3 text-left"
+            onclick="toggleAccordion('accordion-item-1')"
+          >
+            <span class="font-bold"
+              >What types of events do you specialize in organizing?</span
+            >
+            <svg
+              class="h-6 w-6 transform transition-transform duration-200"
+              id="icon-accordion-item-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="accordion-item-1" class="hidden transition-all duration-200">
+            <hr />
+            <p class="py-4">
+              We specialize in organizing a wide range of events, including
+              corporate events, weddings, private parties, conferences, product
+              launches, and social gatherings. Our team is equipped to handle
+              everything from intimate gatherings to large-scale events with
+              hundreds of attendees.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion Item 1 -->
+        <div class="border-2 rounded-xl px-8 mt-2 bg-white">
+          <button
+            class="w-full flex justify-between items-center py-3 text-left"
+            onclick="toggleAccordion('accordion-item-2')"
+          >
+            <span class="font-bold"
+              >How far in advance should I book your services?</span
+            >
+            <svg
+              class="h-6 w-6 transform transition-transform duration-200"
+              id="icon-accordion-item-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="accordion-item-2" class="hidden transition-all duration-200">
+            <hr />
+            <p class="py-4">
+              We recommend booking our services at least 3-6 months in advance,
+              especially for larger events or during peak seasons. However, we
+              understand that sometimes events are planned on shorter notice,
+              and we will do our best to accommodate your needs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion Item 1 -->
+        <div class="border-2 rounded-xl px-8 mt-2 bg-white">
+          <button
+            class="w-full flex justify-between items-center py-3 text-left"
+            onclick="toggleAccordion('accordion-item-3')"
+          >
+            <span class="font-bold"
+              >What is included in your event management services?</span
+            >
+            <svg
+              class="h-6 w-6 transform transition-transform duration-200"
+              id="icon-accordion-item-3"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="accordion-item-3" class="hidden transition-all duration-200">
+            <hr />
+            <p class="py-4">
+              Our event management services include venue selection, event
+              design and theme development, vendor coordination, guest
+              management, logistics planning, on-site management, and post-event
+              follow-up. We tailor our services to meet your specific needs and
+              ensure a seamless event experience.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion Item 1 -->
+        <div class="border-2 rounded-xl px-8 mt-2 bg-white">
+          <button
+            class="w-full flex justify-between items-center py-3 text-left"
+            onclick="toggleAccordion('accordion-item-4')"
+          >
+            <span class="font-bold"
+              >Can you work within a specific budget?</span
+            >
+            <svg
+              class="h-6 w-6 transform transition-transform duration-200"
+              id="icon-accordion-item-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="accordion-item-4" class="hidden transition-all duration-200">
+            <hr />
+            <p class="py-4">
+              Absolutely! We understand that every event has a budget, and we
+              pride ourselves on delivering exceptional experiences that align
+              with your financial requirements. We work closely with you to
+              maximize your budget and ensure that every dollar is well spent.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion Item 1 -->
+        <div class="border-2 rounded-xl px-8 mt-2 bg-white">
+          <button
+            class="w-full flex justify-between items-center py-3 text-left"
+            onclick="toggleAccordion('accordion-item-5')"
+          >
+            <span class="font-bold"
+              >Do you offer customized event packages?</span
+            >
+            <svg
+              class="h-6 w-6 transform transition-transform duration-200"
+              id="icon-accordion-item-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="accordion-item-5" class="hidden transition-all duration-200">
+            <hr />
+            <p class="py-4">
+              Yes, we offer fully customizable event packages that can be
+              tailored to your preferences and needs. Whether you need
+              full-service event planning or just specific services like décor
+              or entertainment, we can create a package that suits your vision
+              and budget.
             </p>
           </div>
         </div>
