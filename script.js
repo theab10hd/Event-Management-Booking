@@ -22,7 +22,7 @@ function navbarTap() {
   }
 }
 
-// Accordion 
+// Accordion
 
 function toggleAccordion(id) {
   const content = document.getElementById(id);
@@ -36,3 +36,5 @@ function toggleAccordion(id) {
     icon.classList.remove("rotate-180");
   }
 }
+
+// Animation
