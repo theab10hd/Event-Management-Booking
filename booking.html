@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- book -->
+<form>
+    <div class="space-y-12">
+      <div class="border-b border-gray-900/10 pb-12">
+        <div class="mt-10 ml-40 mr-40 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-4">
+          <div class="sm:col-span-2">
+            <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+            <div class="mt-2">
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+  
+          <div class="sm:col-span-2">
+            <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+            <div class="mt-2">
+              <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+  
+          <div class="sm:col-span-4">
+            <label for="number" class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
+            <div class="mt-2">
+              <input id="number" name="number" type="text" autocomplete="number" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+
+          <div class="sm:col-span-4">
+            <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+            <div class="mt-2">
+              <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+  
+          <div class="sm:col-span-4">
+            <label for="event-type" class="block text-sm font-medium leading-6 text-gray-900">Event Type</label>
+            <div class="mt-2">
+              <select id="event-type" name="event-type" autocomplete="event-type" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <option value="" hidden>Select an option</option>
+                <option value="">Weddings</option>
+                <option value="">Corporate Events</option>
+                <option value="">Non-Profit</option>
+                <option value="">Party Planning</option>
+                <option value="">Other</option>
+                </select>
+            </div>
+          </div>
+
+          <div class="sm:col-span-4">
+            <label for="guest-count" class="block text-sm font-medium leading-6 text-gray-900">Guest Count</label>
+            <div class="mt-2">
+              <input id="guest-count" name="guest-count" type="text" autocomplete="guest-count" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+  
+          <div class="col-span-4">
+            <label for="date" class="block text-sm font-medium leading-6 text-gray-900">Date</label>
+            <div class="mt-2">
+              <input type="date" name="date" id="date" autocomplete="date" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:max-w-xs sm:leading-6">
+            </div>
+          </div>
+
+          <div class="sm:col-span-4">
+            <label for="budget" class="block text-sm font-medium leading-6 text-gray-900">Budget</label>
+            <div class="mt-2">
+              <select id="budget" name="budget" autocomplete="budget" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <option value="" hidden>Select an option</option>
+                <option value="">₹25000-₹50000</option>
+                <option value="">₹50000-₹75000</option>
+                <option value="">₹75000-₹100000</option>
+                <option value="">₹100000+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="sm:col-span-4">
+            <label for="hear" class="block text-sm font-medium leading-6 text-gray-900">How Did You Hear About Us</label>
+            <div class="mt-2">
+              <select id="hear" name="hear" autocomplete="hear" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <option value="" hidden>Select an option</option>
+                <option value="">Google</option>
+                <option value="">Facebook</option>
+                <option value="">Referrel</option>
+                <option value="">Instagram</option>
+                <option value="">News Paper</option>
+                <option value="">Other</option>
+              </select>
+            </div>
+          </div>
+  
+          <div class="sm:col-span-4 sm:col-start-1">
+            <label for="message" class="block text-sm font-medium leading-6 text-gray-900">Message</label>
+            <div class="mt-2">
+              <textarea name="message" id="message" autocomplete="message" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="mt-6 flex items-center justify-center gap-x-6">
+      <button type="submit" class="rounded-md bg-yellow-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-yellow-500">SUBMIT</button>
+    </div>
+  </form>
+</body>
+</html>
