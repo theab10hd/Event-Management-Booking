@@ -32,7 +32,7 @@
     <!-- Navbar Start-->
     <header class="relative flex justify-center">
       <nav
-        class="flex h-16 w-screen justify-center items-center relative z-10 bg-gray-800 md:bg-transparent"
+        class="flex h-16 w-screen justify-center items-center relative z-20 bg-gray-800 md:bg-transparent"
       >
         <div
           class="container py-4 flex mx-auto px-6 lg:px-28 justify-between items-center w-screen"
@@ -88,10 +88,10 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="w-full hidden z-0 absolute top-16 bg-gray-800 pb-5 text-white mx-auto rounded-b-2xl transform -translate-y transition-transform duration-500 ease-in-out"
+        class="w-full hidden z-10 absolute top-16 bg-gray-800 pb-5 text-white mx-auto rounded-b-2xl transform -translate-y transition-transform duration-500 ease-in-out"
       >
         <a href="./index.html" class="block px-6 py-2">Home</a>
-        <a href="#" class="block px-6 py-2">Book</a>
+        <a href="./booking.html" class="block px-6 py-2">Book</a>
         <a href="#" class="block px-6 py-2">Contact</a>
         <a
           href="#"
@@ -113,7 +113,9 @@
 
     <!-- Hero Section -->
 
-    <div class="md:flex justify-center items-center w-screen md:-mt-16 hidden">
+    <div
+      class="md:flex justify-center items-center w-screen md:-mt-16 hidden relative z-0"
+    >
       <video
         class="w-full object-cover"
         autoplay
