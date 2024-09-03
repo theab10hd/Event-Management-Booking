@@ -1,74 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<!-- ......main container -->
-   
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
-<!-- ......login container -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Login | EliteEvents</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<div class="row border rounded-5 p-3 bg-white shadow box-area">
-
-
-<!-- ......left box-->
-<div class="col-md-6 rounded-4 justify-content-center align-items-center flex-column left-box" style="background-color:white">
-<div class="featured-image">
-    <img src="./logimg.jpg" class="img-fluid"style="width:300px; height:300px">
-
-</div>
-<P class="text-danger fs-2" style="font-family:'Times New Roman', Times, serif font-weight: 700;">We create you celebrate!</P>
-<small class="text-dark text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;"></small>
-</div>
-
-<!-- right box -->
-
-<div class="col-md-6 right-box">
-    <div class="row align-items-center">
-
-   
-        <div class="header-text mb-4">
-            <p>Hello again</p>
-            <p>We are happy to have you back.</p>
-
+  <body>
+    <!-- Navbar Start-->
+    <header class="relative flex justify-center">
+      <nav
+        class="flex h-16 w-screen justify-center items-center relative z-10 bg-gray-800"
+      >
+        <div
+          class="container py-4 flex mx-auto px-6 lg:px-28 justify-between items-center w-screen"
+        >
+          <div class="flex items-center">
+            <h1 class="font-bold text-2xl ml-2 title text-yellow-500">
+              E<span class="font-medium text-white title"
+                >liteEventsGlobal</span
+              >
+            </h1>
+          </div>
+          <div class="hidden md:flex space-x-8 text-white items-center">
+            <a href="./index.html" class="no-underline font-semibold">Home</a>
+            <a href="./booking" class="no-underline font-semibold">Book</a>
+            <a href="#" class="no-underline font-semibold">Contact</a>
+            <a
+              href="./login.html"
+              class="no-underline font-semibold rounded-md px-4 py-2 text-white bg-yellow-500 hover:bg-yellow-300 duration-300"
+              >Login</a
+            >
+            <a
+              href="#"
+              class="no-underline font-semibold rounded-md px-3 py-1.5 border-2 border-yellow-500 hover:border-yellow-300 hover:text-yellow-300 duration-300"
+              >Register</a
+            >
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+              onclick="navbarTap()"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="input-group mb-3">
-            <input type="text" required class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
+      </nav>
 
-        </div>
-        <div class="input-group mb-1">
-            <input type="password" required class="form-control form-control-lg bg-light fs-6" placeholder="password">
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="w-full hidden z-0 absolute top-16 bg-gray-800 pb-5 text-white mx-auto rounded-b-2xl transform -translate-y transition-transform duration-500 ease-in-out"
+      >
+        <a href="./index.html" class="block px-6 py-2">Home</a>
+        <a href="./booking.html" class="block px-6 py-2">Book</a>
+        <a href="#" class="block px-6 py-2">Contact</a>
+        <a
+          href="./login.html"
+          class="block px-6 py-2 text-yellow-500 hover:text-yellow-300 duration-300"
+          >Login</a
+        >
+        <a
+          href="#"
+          class="block px-6 py-2 text-yellow-500 hover:text-yellow-300 duration-300"
+          >Register</a
+        >
+        <button class="flex w-full justify-center mt-8" onclick="navbarTap()">
+          <i
+            class="fa-regular fa-circle-xmark block px-6 py-2 fa-2xl text-white hover:text-yellow-500"
+          ></i>
+        </button>
+      </div>
+    </header>
+    <!-- ......main container -->
 
-        </div>
-        <div class="input-group mb-5 d-flex justify-content-right">
-            <input type="checkbox" class="form-check-input" type="checkbox" id="formcheck">
-            <label for="formcheck" class="form-check-label text-secondary"><small>Remember me</small></label>
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <!-- ......login container -->
 
-        </div>
-        <div class="forgot">
-            <small><a href="#">Forgot password?</a></small>
+      <div class="row border rounded-5 p-3 bg-white shadow box-area">
+        <!-- ......left box-->
+        <div
+          class="col-md-6 rounded-4 justify-content-center align-items-center flex-column left-box"
+          style="background-color: white"
+        >
+          <div class="featured-image">
+            <img
+              src="./images/logimg.jpg"
+              class="img-fluid"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <p
+            class="text-danger fs-2"
+            style="
+              font-family: 'Times New Roman', Times, serif;
+              font-weight: 700;
+            "
+          >
+            We create you celebrate!
+          </p>
+          <small
+            class="text-dark text-wrap text-center"
+            style="width: 17rem; font-family: 'Courier New', Courier, monospace"
+          ></small>
         </div>
 
+        <!-- right box -->
+
+        <div class="col-md-6 right-box">
+          <div class="row align-items-center">
+            <div class="header-text mb-4">
+              <p>Hello again</p>
+              <p>We are happy to have you back.</p>
+            </div>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                required
+                class="form-control form-control-lg bg-light fs-6"
+                placeholder="Email address"
+              />
+            </div>
+            <div class="input-group mb-1">
+              <input
+                type="password"
+                required
+                class="form-control form-control-lg bg-light fs-6"
+                placeholder="password"
+              />
+            </div>
+            <div class="input-group mb-5 d-flex justify-content-right">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                type="checkbox"
+                id="formcheck"
+              />
+              <label for="formcheck" class="form-check-label text-secondary"
+                ><small class="ms-2">Remember me</small></label
+              >
+            </div>
+            <div class="forgot">
+              <small><a href="#">Forgot password?</a></small>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <button class="btn btn-lg btn-warning w-100 fs-6">Login</button>
+          </div>
+          <div class="input-group mb-3">
+            <button
+              class="btn btn-lg btn-warning w-100 fs-6 d-flex justify-content-center"
+            >
+              <img src="./images/google.png" style="width: 20px" class="me-2" />
+              <p class="text-black">Login with google</p>
+            </button>
+          </div>
+          <div class="row">
+            <small>Don't have a account? <a href="#">Sign up</a></small>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="input-group mb-3">
-        <button class="btn btn-lg btn-warning w-100 fs-6">Login</button>
-    </div>
-    <div class="input-group mb-3">
-        <button class="btn btn-lg btn-warning w-100 fs-6"> <img src="./google.png" style="width:20px;" class="me-2">Login with google</button>
-    </div>
-<div class="row">
-    <small>Don't have a account? <a href="#">Sign up</a></small>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</body>
+    <footer
+      class="mt-16 md:px-28 sm:px-8 px-4 bg-gray-800 p-1 w-screen text-white"
+    >
+      <p class="text-xs text-center">
+        © 2024 EliteEventsGlobal. All rights reserved.
+      </p>
+    </footer>
+  </body>
 </html>
