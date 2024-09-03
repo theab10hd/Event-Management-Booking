@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power3.inOut",
     scrollTrigger: {
       trigger: heroText,
-      start: "center 80%",
-      end: "bottom 60%",
+      start: "top bottom",
+      end: "top center",
       scrub: "true",
       once: "true",
     },
@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".col-event-1", {
     scrollTrigger: {
       trigger: ".col-event-1",
-      start: "center 80%",
-      end: "center center",
+      start: "top bottom",
+      end: "top center",
       scrub: 1,
       once: "true",
     },
@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".col-event-2", {
     scrollTrigger: {
       trigger: ".col-event-2",
-      start: "center 80%",
-      end: "center center",
+      start: "top bottom",
+      end: "top center",
       scrub: 1,
       once: "true",
     },
@@ -85,8 +85,8 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".col-event-3", {
     scrollTrigger: {
       trigger: ".col-event-3 ",
-      start: "center 80%",
-      end: "center center",
+      start: "top bottom",
+      end: "top center",
       scrub: 1,
       once: "true",
     },
@@ -98,8 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".col-event-4", {
     scrollTrigger: {
       trigger: ".col-event-4",
-      start: "center 80%",
-      end: "center center",
+      start: "top bottom",
+      end: "top center",
       scrub: 1,
       once: "true",
     },
@@ -111,8 +111,8 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".col-event-5", {
     scrollTrigger: {
       trigger: ".col-event-5",
-      start: "center 80%",
-      end: "center center",
+      start: "top bottom",
+      end: "top center",
       scrub: 1,
       once: "true",
     },
@@ -126,12 +126,12 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".working-1", {
     scrollTrigger: {
       trigger: ".working-1",
-      start: "top 80%",
-      end: "center center",
+      start: "top bottom",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
-    y: 80,
+    y: 100,
     opacity: 0,
     ease: "power3.inOut",
   });
@@ -139,12 +139,12 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".working-2", {
     scrollTrigger: {
       trigger: ".working-1",
-      start: "top 70%",
-      end: "center center",
+      start: "top bottom",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
-    y: 80,
+    y: 150,
     opacity: 0,
     ease: "power3.inOut",
   });
@@ -152,12 +152,12 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".working-3", {
     scrollTrigger: {
       trigger: ".working-1",
-      start: "top 60%",
-      end: "center center",
+      start: "top bottom",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
-    y: 80,
+    y: 200,
     opacity: 0,
     ease: "power3.inOut",
   });
@@ -165,12 +165,12 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".working-4", {
     scrollTrigger: {
       trigger: ".working-1",
-      start: "top center",
-      end: "center center",
+      start: "top bottom",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
-    y: 80,
+    y: 250,
     opacity: 0,
     ease: "power3.inOut",
   });
@@ -180,8 +180,8 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".brand-title", {
     scrollTrigger: {
       trigger: ".brand-title",
-      start: "top 85%",
-      end: "center center",
+      start: "top bottom",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".brand-logo-1",
       start: "top 85%",
-      end: "center center",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".brand-logo-2",
       start: "top 80%",
-      end: "center center",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".brand-logo-3",
       start: "top 75%",
-      end: "center center",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".brand-logo-4",
       start: "top 70%",
-      end: "center center",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".brand-logo-5",
       start: "top 65%",
-      end: "center center",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".brand-logo-6",
       start: "top 60%",
-      end: "center center",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".brand-logo-7",
       start: "top 55%",
-      end: "center center",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
@@ -285,7 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".brand-logo-8",
       start: "top center",
-      end: "center center",
+      end: "top center",
       once: "true",
       scrub: 1,
     },
