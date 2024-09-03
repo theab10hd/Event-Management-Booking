@@ -1,5 +1,4 @@
-// Navbar
-
+// Nav Bar
 function navbarTap() {
   var menu = document.getElementById("mobile-menu");
 
@@ -22,7 +21,7 @@ function navbarTap() {
   }
 }
 
-// Accordion
+// Accordion Animation
 
 function toggleAccordion(id) {
   const content = document.getElementById(id);
@@ -37,4 +36,129 @@ function toggleAccordion(id) {
   }
 }
 
-// Animation
+// GSAP
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const heroText = document.getElementById("hero-text");
+
+  gsap.from(heroText, {
+    y: 100,
+    opacity: 0,
+    ease: "none",
+    scrollTrigger: {
+      trigger: heroText,
+      start: "-80% center",
+      end: "top center",
+      scrub: true,
+    },
+  });
+
+  gsap.from(".col-event-1", {
+    scrollTrigger: {
+      trigger: ".col-event-1",
+      start: "top 80%",
+      end: "40% 60%",
+      scrub: true,
+    },
+    y: 30,
+    opacity: 0,
+    ease: "none",
+  });
+
+  gsap.from(".col-event-2", {
+    scrollTrigger: {
+      trigger: ".col-event-1",
+      start: "top 80%",
+      end: "40% 60%",
+      scrub: true,
+    },
+    y: 60,
+    opacity: 0,
+    ease: "none",
+  });
+
+  gsap.from(".col-event-3", {
+    scrollTrigger: {
+      trigger: ".col-event-1",
+      start: "top 80%",
+      end: "40% 60%",
+      scrub: true,
+    },
+    y: 90,
+    opacity: 0,
+    ease: "none",
+  });
+
+  gsap.from(".col-event-4", {
+    scrollTrigger: {
+      trigger: ".col-event-4",
+      start: "top bottom",
+      end: "top 80%",
+      scrub: true,
+    },
+    x: -100,
+    opacity: 0,
+    ease: "none",
+  });
+
+  gsap.from(".col-event-5", {
+    scrollTrigger: {
+      trigger: ".col-event-4",
+      start: "top bottom",
+      end: "top 80%",
+      scrub: true,
+    },
+    x: 100,
+    opacity: 0,
+    ease: "none",
+  });
+
+  // How we Work
+
+  gsap.from(".working-1", {
+    scrollTrigger: {
+      trigger: ".working-1",
+      start: "top 80%",
+      end: "center center",
+      scrub: "true",
+    },
+    y: 80,
+    opacity: 0,
+    ease: "back",
+  });
+  gsap.from(".working-2", {
+    scrollTrigger: {
+      trigger: ".working-1",
+      start: "top 70%",
+      end: "center center",
+      scrub: "true",
+    },
+    y: 80,
+    opacity: 0,
+    ease: "back",
+  });
+  gsap.from(".working-3", {
+    scrollTrigger: {
+      trigger: ".working-1",
+      start: "top 60%",
+      end: "center center",
+      scrub: "true",
+    },
+    y: 80,
+    opacity: 0,
+    ease: "back",
+  });
+  gsap.from(".working-4", {
+    scrollTrigger: {
+      trigger: ".working-1",
+      start: "top center",
+      end: "center center",
+      scrub: "true",
+    },
+    y: 80,
+    opacity: 0,
+    ease: "back",
+  });
+});
