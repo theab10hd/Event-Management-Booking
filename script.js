@@ -19,6 +19,21 @@ function navbarTap() {
       { once: true }
     );
   }
+
+  var links = menu.querySelectorAll("a");
+  links.forEach(function (link) {
+    link.addEventListener("click", function () {
+      menu.classList.add("-translate-y-full");
+      menu.classList.remove("translate-y-0");
+      menu.addEventListener(
+        "transitionend",
+        function () {
+          menu.classList.add("hidden");
+        },
+        { once: true }
+      );
+    });
+  });
 }
 
 // Accordion Animation
